@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <title>Stanford Capital | Financial and Accounting Services</title>
+
+  <!--Boostrap Core Css Start-->
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+  <!--Boostrap Core Css end-->
+
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+  <!--Google Font Css Start-->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Teko:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!--Google Font Css end-->
+
+  <!--External Core Css start-->
+
+  <link href="css/default.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+  <link href="css/animate.min.css" rel="stylesheet" />
+  <link href="css/sina-nav.css" rel="stylesheet" />
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- <script
+    id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/b9c2900581cdc19fbe6e57e67/1f5bc9fa5f2a4f475bc626c8a.js");</script> -->
+</head>
+
+<body>
+  <a href="https://wa.me/9321922076/" style="display: flex; justify-content: center;"
+    class="float hvr-wobble-to-top-right" target="_blank"><img style="width: 70%; height: 70%; margin-top: 8px;"
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYVJREFUSEvVVcFtwzAM5G3SbNJM0mSSJJM0naTuJM0mrE8gBUqm5H6CogIMOLHEuyN5FOTJC0+OL38PoKovIvImIq/2PETEny8A91kWpgpU9bIevloABl3snaAE5LoCuI1AUgBj/SkiDJQGCMpIgOC3TM0IwIOfATjrlGQgw+9HAASrawMQ0sLNCwP0h3okA/leFd8BnIcA2cYVUJkCAIdZMVX1JCLvpqKqbhSETQeyDr9d/jBdgVxTsx6ADE5rV5T/VZWdwnrsAtj+shfA0dX2AMzj4nkMrHho15RWPxKs6cwAmO/KIKRpU8Ck2E0Gipq4SVU3Ek26G66AmDIGo9pqMlVtMpABMBC7oennxFQ0oK+qzDpuWmQeTPvZlPA7mfuYoKmKGXv/pEW2IARgUYd9b4powNK2odvmRrPNNNZuQZ1hHBUZqZHRfIJ6nI9+XCR1SedWarRQQOaYeY93AN/9buDWqdq0TW3u8zIpwy5cON49zD2BNsp6b+y6czbgfvPt/wP8ANBF5Blx5cRmAAAAAElFTkSuQmCC" /></a>
+  <a href="tel:+912241774177" style="display: flex; justify-content: center;" class="contact hvr-wobble-to-top-right-1"
+    target="_blank"><img style="width: 70%; height: 70%; margin-top: 8px;"
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVRJREFUSEvVleFxwjAMha1NyiSUSQqTQCdpmKQwSbuJms8n+Yyxgx2OH/VdDsgRfc9Peo6EFy95cf1QBajqWwjhK4TA505EftcKuQNkxd+tKMVXQ24ARXFXzS5WQ0oAtuwpKCIbA36bVasgJUCxRUTS/RICeKQfJeDH1G68sYVtFxHZPQPADppLUy8UUlW/F20bKR7dyB9Q1eP8+8Q12/RpAN9Vgo5ASgDqUZzUqqo3fhKRw0jx2g4YSZ+aqNh6wC6YooNb1wuqBc1tSg3NrLsZ1Z7Et5KMYhaKp0oAGYDzPAOIWUx86ywibHifFBvkw4Ygd2gx8c3T9IEtDnqY+CWAn6hYgEqmKI5ubbUSv/g+qNgy4X1tklqJ73rhZHa5+LijOfFX2x336VncbZ74LoAlGsvwngHge23dHSfdAK9mVqB0ayBgXOl4ycnDgN4E+//+P+AP1Ce+GR918GgAAAAASUVORK5CYII=" /></a>
+  <header>
+    <!-- <div class="top-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-sm-12 col-md-12 col-xl-7 col-12">
+            <div class="topbar-left">
+              <ul>
+                <li><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZtJREFUSEvVlUFSwjAUht9LWTgDC8QLlJPYLrXjGYSToCehnsGpLltPAhcQWZQZF5iYF5qatimkdFjYGRak8H8v/3t/gnDhBy+sD1bA1fvYHwhcCoH+D+Ph9912fW4hDYAWB4EBiQqAdR9IBWCKkzABEMDvA6kAhslkiQAzEtxFmykBPc7SPpAKYJRMBFWdR5tyvQ4hcJd+1Hewomr3jE91Yys9QZHl91/h2YDR23Wqmst5mD9sMxLSa9q2LuJFD//+Ii1ayG9P9JE2PdObYTJRuzKhXSDVHryOA2AsNas1Gh/vos28i3hjB2ZDdcWqB5ytCIqcz7V1rqBG0EqbjIbqtXoeXBJvTzJnq0OKcb6LPmNLADPk/AU8XJxKvPUsGiY3MwSxNCsurHoshqB06FTiW0/To7ZwpkAuiW8F1G2Roxrr0bU1uC3xR++Dui0CICbvbZPUlninC8cIoCpejSxALEf5Yz84nLp0f1DD64l3ApCA3o0UmKlkWx7bceIM0HoHr70AQNwiCp9uvQJYHi8muzPANcH6d/8f8Au1oyso683k/gAAAABJRU5ErkJggg==" />+91 22 41774177</li>
+                <li><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATBJREFUSEvdlUtuwjAQhmcaL5DwllTdhZuQkwAnCT1JehO4Sb1Dha2RWBANjGVbrlVXTgKbeOnMzDf+5xGEFx98cXyYEOAs5YqIWkCsRslGpBBxu9D6wHG8RCcp9wCwGhXcOROp8nJZxgDii+52W35cr2oI6DibVYUQ3+xbam2SD19gAECkCPHrXevPPhAjMQCrYE4aYA0etF0u5EfK5pHpLkwoCeDA3phIdV1XpySzkrSudqFvEsAfjGNR7E1HRV3hsvwlSWBzktJI/S+ADSykAcRNXJdIkkOpde3A2QAHeRNi7SSzEnArm3b+q069AD6r+XwDiKy1PwhQu2EK7wcBvGRCtEBUhZMat/JgQO5MTBvwvGUH4FvX7yI7OM3ojZpa17lF7Gs3oV9m36fn2t8BVgfKGdJ19xAAAAAASUVORK5CYII=" />
+                  <a href="mailto:info@stanfordcapital.in">info@stanfordcapital.in</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-5 col-sm-12 col-md-12 col-xl-5 col-12">
+            <div class="socialtop">
+              <ul>
+                <li><a href="https://www.instagram.com/stanfordcapitalservices?igsh=emdyMGttcXA3YzRm" target="_blank"><img src="img/background/bgicon.png" alt=""></a></li>
+                <li><a href="https://www.facebook.com/stanfordcapitalservices/" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYtJREFUSEu1lUF2gkAMhhN6kOqmcoviRuopKjfAXqB6gcINoKewupHeAtx0TjLpGyqYgRkG3qvuhCFfkv+fBOHOP7xzfHAC/PgQSPCeETEAoAAABBEVACg8kN9lui6GkrQC/PgwI3zIrkGHYggkuSzTtTAdMgKe4uM7IuwmtE8QQX5Jw333mx5gQnCV8YwHJIJdF6IB/tri/QxkLhBxX36s8uZMJyHVrojrogEW29N5qOdIct7ttaFiUSXhvEmgBfhvpw0RZbbsiSi/pC9R815VK8F7Ze5qP72KXrurBbh6z/vrTuamBQN8ZYi4sVWAiFHTe1cyAFhUyWqpVbDYHpW4mis4bBoAWh3aCiwATTBTdTZjVElYx2YAo4NGAPqVc0O4RK7HgMqE21M5qKnGdG+MADXUCL3zf4jM9Rp90caLfHOQpoH6MzQqxgL4JesB1AObx8cAnMPOMsDqxy4Af6/dH5uo3YUzAOhN0FGA7lDj61HNIinp0QP5adtkvWk6YXtNOupc+pOiGQ7/Au1A/hnf0/n6AAAAAElFTkSuQmCC"/></a></li>
+                <li><a href="https://in.linkedin.com/company/stanfordcapitalindia" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARlJREFUSEvtlM1xwjAQhd9zJeIClBEuELqADgwNJBVgOoAu+LngMjAXVAmbWRuBMRBjCzKTGXzTWHqf3tvVEi/++GJ9/C2gNVpvAPnwdGWTqNdwGhcOWqOVeIqnx5Ood9L9BcBY5GBJDqpCSwEiMt9NP4cqXCe2UgDAOIm6HQU0w+WsqosHALAiEgO0JL6fHhEAq+KZsBgARl3l1tD/WY0CU+y8Ugf5GriI3KF2uEjbeDvtH4Ea4+or79QLcCuudrgwwmDv/nkDXGeRHG4n3Xmx27wAGpEw2KTVudPOfoDxeiAisyIg385vgH9E+tCylwyQ1L43WtBsffGwrvZVmKZVB8R5/90i1xls19c4D8rUcf17Pnby/wN+ACWqIChsZKTGAAAAAElFTkSuQmCC"/></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <nav class="sina-nav mobile-sidebar" data-top="60" data-md-top="60" data-xl-top="60">
+      <div class="container">
+        <div class="sina-nav-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"
+            aria-expanded="true"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAExJREFUSEtjZKAxYKSx+QyjFhAM4QEJov8EnYVfAYqjsfmA5hZQ6AFU7QMSBzT3Ac3jgOYW0DyIhr4FNI8Dmlsw9ONg1AcoIUDz0hQAbegGGXzv/l0AAAAASUVORK5CYII=" /></button>
+          <a class="sina-brand" href="index.html"> <img src="img/icons/logo-2.png" alt=""></a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-menu">
+          <ul class="sina-menu" data-in="fadeInLeft" data-out="fadeInOut">
+            <li><a href="about-us.html">About us</a></li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown">Services</a>
+              <ul class="dropdown-menu">
+                <li><a href="accounts-and-finance-outsourcing.html">Accounts and Finance Outsourcing</a></li>
+                <li><a href="direct-indirect-tax.html">Direct and Indirect Tax</a></li>
+                <li><a href="consulting-cfo.html">Consulting CFO</a></li>
+                <li><a href="secretarial-services.html">Secretarial Services</a></li>
+                <li><a href="investment-consultancy.html">Investment Consultancy</a></li>
+                <li><a href="human-resource-management-outsuorcing.html"> Human Resource Management Outsourcing</a></li>
+              </ul>
+            </li>
+            <!-- <li class="dropdown"><a href="#" data-toggle="dropdown">Products</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">e-Invoicing</a></li>
+                <li><a href="GST-automation.html">GST Automation</a></li>
+                <li><a href="robotic-process-automation.html">Robotic Process Automation solutions</a></li>
+                <li><a href="spending-management-software-solution.html">Expenzing Spend Management Budgeting &
+                    Planning</a></li>
+                <li><a href="document-management-system.html">Documents Management System (DMS)</a></li>
+                <li><a href="human-resource-management-system-solutions.html">Human Resource Management System
+                    (HRMS)</a></li>
+              </ul>
+            </li> -->
+
+            <!--<li><a href="#">Downloads</a></li>-->
+            <li><a href="stanford-uae.html">Stanford UAE</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a class="btn btn-enroll" href="javascript:;" onclick="showPanel()">Let's Talk</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="col-lg-12 col-sm-12 col-md-12 col-xl-12 col-12">
+  </div>
+  <div id="panelRight">
+    <div style="position:absolute; right:20px; top: 20px; cursor:pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
+        stroke-width="1" stroke-linecap="square" stroke-linejoin="arcs" onclick='hidePanel()'>
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="15" y1="9" x2="9" y2="15"></line>
+        <line x1="9" y1="9" x2="15" y2="15"></line>
+      </svg>
+    </div>
+    <div class="letstalk-panel">
+      <h3>Let's Talk</h3>
+      <form name="letsTalkForm" method="POST" id="letsTalkForm" action="https://formspree.io/f/myyrlkpw"
+        enctype="multipart/form-data">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="companyname">Your Name / Company Name <span>*</span></label>
+            <input type="text" class="form-control" id="companyname" name="companyname" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email Address <span>*</span></label>
+            <input type="email" class="form-control" id="inputEmail4" name="inputEmail4" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="phoneno">Phone No. / Mobile No.</label>
+            <input type="number" class="form-control" id="phoneno" name="phoneno">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputSsubject">Subject <span>*</span></label>
+            <input type="text" class="form-control" id="inputSsubject" name="inputSsubject">
+          </div>
+          <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xl-12 col-12">
+            <label for="comments">Comments</label>
+            <textarea class="form-control" name="Comments" id="Comments" rows="4"></textarea>
+          </div>
+          
+        </div>
+        <li><button type="submit" class="btn btn-orange1">SUBMIT</a></button>
+          <p id="letsTalkForm-status" style="color: white;"></p>
+      </form>
+    </div>
+  </div>
+  <section class="breadcrumb-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xl-12 col-12">
+          <h1>Investment Consultancy</h1>
+          <ul>
+            <li><a href="index.html">Home</a><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKhJREFUSEvtlMENwjAQBGc7IZ1AJ3QCVIKohFbo5OCkREIokb0X8os//lgz9u7JYuOljfnsgmbCdkQRcQEekl5NOngdjPArkPBTj8R6QUQcgCeQe5fEEmQkrsQWuJKSwJEsCj6FRs+UfJ2Z7eSvAknD76XWRnQHjjlRc/CUlQTjJDXhJYEDtwUuvCI4AxnNYuarS87/SNKtd4RLJffC7Ygc8HR2f0EztTdj50sZI5bR4wAAAABJRU5ErkJggg==" />
+            </li>
+            <li><a href="">Services</a><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKhJREFUSEvtlMENwjAQBGc7IZ1AJ3QCVIKohFbo5OCkREIokb0X8os//lgz9u7JYuOljfnsgmbCdkQRcQEekl5NOngdjPArkPBTj8R6QUQcgCeQe5fEEmQkrsQWuJKSwJEsCj6FRs+UfJ2Z7eSvAknD76XWRnQHjjlRc/CUlQTjJDXhJYEDtwUuvCI4AxnNYuarS87/SNKtd4RLJffC7Ygc8HR2f0EztTdj50sZI5bR4wAAAABJRU5ErkJggg==" />
+            </li>
+            <li>Investment Consultancy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="service-details">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xl-12 col-12">
+          <div class="services-main-img"><img src="img/service-head/service-head-4.jpg" alt="" /></div>
+        </div>
+      </div>
+      <div class="row services-section">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xl-12 col-12">
+          <div class="service-title">
+            <h4>Debt Syndication</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 col-md-12 col-xl-6 col-12"><img src="img/service/service-22.jpg" alt="" /></div>
+        <div class="col-lg-6 col-sm-12 col-md-12 col-xl-6 col-12">
+          <div class="services-content">
+            <p>Our highly organized and experienced debt syndication team understands the needs of promoters to provide
+              a comprehensive suite of corporate finance advisory solutions packaged along with fund raising through
+              Banks, NBFCs, Investors etc. Our expertise provides best short term and long-term fund-raising plans
+              within quick turn-around time at lowest cost of funds.<br><br><span>Our Debt Syndication service
+                includes:</span></p>
+            <ul>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Assistance
+                    in Working Capital, Term Loan and Corporate Loan</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Assistance in funding, i.e. Sales & Lease Back (SLB) Transaction, Sales &
+                    Acquisition of Pre-leased Assets, Lease Rent Discounting (LRD), Construction Finance, etc.</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Fund
+                    raising through Structured Finance, External Commercial Borrowings (ECB), Funding for M&A, Debt
+                    Restructuring etc.</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Promoter
+                    Funding and Loan Against Shares (LAS)</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">All
+                    types of secured and unsecured loans.</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row services-section">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xl-12 col-12">
+          <div class="service-title">
+            <h4>Merger & Acquisition</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 col-md-12 col-xl-6 col-12">
+          <div class="services-content">
+            <p>Our diversified expertise and strong network of business relations provides opportunity for attractive
+              buy and sell side business transactions and support M&A consulting and advisory services.<br><br><span>Our
+                Pre and Post Merger and Acquisition services includes:</span></p>
+            <ul>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Buy
+                    side and Sell side attractive deals</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Due
+                    Diligence, Business Plans, Business Valuations and Capital Structuring</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Merger,
+                    Split and Reorganization</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Direct
+                    and Indirect Tax planning</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Legal
+                    Advisory and assistance in transaction documentation</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Post
+                    transaction business support and integration services.</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 col-md-12 col-xl-6 col-12"><img src="img/service/service-23.jpg" alt="" /></div>
+
+      </div>
+      <div class="row services-section">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xl-12 col-12">
+          <div class="service-title">
+            <h4>Private Equity (PE) & Venture Capital (VC) Funding</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 col-md-12 col-xl-6 col-12"><img src="img/service/service-24.JPG" alt="" /></div>
+        <div class="col-lg-6 col-sm-12 col-md-12 col-xl-6 col-12">
+          <div class="services-content">
+            <p>Our exposure to wide range of businesses and diversified expertise enables us to provide end to end
+              services in all stages for PE& VC, i.e. from Investing and Managing the Portfolio and finally realizing
+              value during exit plan. We provide appropriate deal structuring, finalization of business plan,
+              preparation of Information Memorandum (IM), mutual negotiations for successful closure of
+              transaction.<br><br><span>Our PE & VC Funding Services includes:</span></p>
+            <ul>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">In-depth
+                    study of the client Business and Financials</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Preparation
+                    of Information Memorandum (IM), Due Diligence, Business Plans, Business Valuations and
+                    Capital Structuring</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Selection
+                    of appropriate PE & VC funds and deal negotiations</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Direct
+                    and Indirect Tax planning</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Legal
+                    Advisory and assistance in transaction documentation</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Post
+                    transaction business support services.</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row services-section">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xl-12 col-12">
+          <div class="service-title">
+            <h4>Fund Raising through SME IPO</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 col-md-12 col-xl-6 col-12">
+          <div class="services-content">
+            <p>Our team of experienced professionals handle SME IPO service with deep understanding of client business
+              and objective.<br><br><span>Our service in Fund raising through IPO includes:</span></p>
+            <ul>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Preparation
+                    of data and information to finalize prospectus</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Assistance
+                    in selection of merchant banker and other advisors</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Review
+                    of the listing agreement</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Arranging
+                    necessary financial certificates and providing assistance in post listing compliances.</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 col-md-12 col-xl-6 col-12"><img src="img/service/service-25.jpg" alt="" /></div>
+      </div>
+
+      <div class="row services-section">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xl-12 col-12">
+          <div class="service-title">
+            <h4>Risk Management</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 col-md-12 col-xl-6 col-12"><img src="img/service/service-26.png" alt="" /></div>
+        <div class="col-lg-6 col-sm-12 col-md-12 col-xl-6 col-12">
+          <div class="services-content">
+            <p>Simple and flexible portfolio performance and risk monitoring service, based on the provision of
+              investment objective & reporting framework. It includes portfolio performance, risk, liquidity, and fee
+              analysis, while using industry-leading fintech to provide efficient and ‘fit-for-purpose’ analysis with
+              high quality, custom-made reports, tailored to your requirements.<br><br><span>Our Risk Management
+                services includes:</span></p>
+            <ul>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Provide in-depth research and due diligence on fund investments</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Client risk profiling</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Portfolio performance, risk, liquidity, and fee analysis</div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Strategy Advice on capital markets, changing regulations </div>
+                </div>
+              </li>
+              <li>
+                <div class="subcontainer">
+                  <div class="firstsection"><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMRJREFUSEtjZKAxYKSx+QyjFhAMYZKD6LGWUT3Lv38LJW9ceEDQdAYG0uIAZDgjI2MDAwPDA+a/fx2JsYQkHzzXMFD4y8y8n4GBQYFYS0iyABQkpFpCsgWkWkKWBaRYgtOCJ9rG/4lJJUhqsEY8VS2QuXpWEd1RlAbRfAYGBgdQisJmOMgysiyApiSChpNlASmGk2wBqYaTbMETLaMEBkZGUNDgDHOKIxlUHsleO9dIbBImK5KJNZzkICLFYJjaUR8QDDUA2XhhGSYRaiIAAAAASUVORK5CYII=" />
+                  </div>
+                  <div class="secondsection">Outdated asset allocation and portfolio construction approaches.</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="contact-form-1">
+    <div class="container">
+      <div class="title-center-blk">
+        <h2>Enquire Now</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xl-12 col-12">
+          <form action="https://formspree.io/f/xwkgavbz" id="my-form" method="POST">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputFirstName">First Name <span>*</span></label>
+                <input type="text" class="form-control" id="inputFirstName" name="inputFirstName" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputLastName">Last Name <span>*</span></label>
+                <input type="text" class="form-control" id="inputLastName" name="inputLastName" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail">Email Address <span>*</span></label>
+                <input type="email" class="form-control" id="inputEmail" name="inputEmail" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPhone"> Phone No. / Mobile No.<span>*</span></label>
+                <input type="tel" class="form-control" id="inputPhone" name="inputPhone" pattern="[0-9]{10}"
+                  placeholder="10 Digit Number" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputDesignation">Designation <span>*</span></label>
+                <input type="text" class="form-control" id="inputDesignation" name="inputDesignation" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputCompanyName"> Company Name<span>*</span></label>
+                <input type="text" class="form-control" id="inputCompanyName" name="inputCompanyName" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City <span>*</span></label>
+                <input type="text" class="form-control" id="inputCity" name="inputCity" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputMessage">Message</label>
+                <textarea class="form-control" name="Message" id="Message" rows="4"></textarea>
+              </div>
+            </div>
+            
+            <input type="hidden" name="service_type" value="Investment Banking" />
+            <input type="hidden" name="page_url" value="investment-consultancy.html" />
+            <button type="submit" class="btn btn-form-submit-1">Submit</button>
+            <p id="my-form-status"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xl-12 col-12">
+          <div class="title-center-wht">
+            <h2>Subscribe Newsletter</h2>
+            <span>By subscribing you will get the latest news from us.</span>
+          </div>
+          <div class="newsletter-form">
+            <form action="subscribe.html" name="subForm" method="POST" id="subForm" enctype="multipart/form-data">
+              <div class="subscription-block-form-box">
+                <input class="newsletter_name_email" type="email" name="name_email" placeholder="Enter Your Email Id"
+                  required>
+                <input class="newsletter_name_email" type="number" name="name_mobile"
+                  placeholder="Enter Your Mobile No." required>
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xl-12 col-12">
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <section class="footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-sm-12 col-md-12 col-xl-2 col-12">
+          <div class="footer-links">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+
+              <!--<li><a href="">News</a></li>
+
+            <li><a href="">Blog</a></li>-->
+
+              <li><a href="testimonials.html">Testimonials</a></li>
+              <li><a href="career.html">Careers</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 col-md-12 col-xl-4 col-12">
+          <div class="footer-links">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="accounts-and-finance-outsourcing.html">Accounts and Finance Outsourcing</a></li>
+              <li><a href="direct-indirect-tax.html">Direct and Indirect Tax</a></li>
+              <li><a href="consulting-cfo.html">Consulting CFO</a></li>
+              <li><a href="secretarial-services.html">Secretarial Services</a></li>
+              <li><a href="investment-consultancy.html">Investment Consultancy</a></li>
+              <li><a href="human-resource-management-outsuorcing.html">Human Resource Management Outsourcing</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 col-md-12 col-xl-4 col-12">
+          <div class="footer-links">
+            <h5>Branches</h5>
+            <ul>
+              <li><a href="stanford-uae.html">Stanford UAE</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xl-12 col-12">
+          <div class="footer-map-section"> <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXdJREFUSEu1VUFug0AMHJMcKoVHJD8hxxb1DQ0vwbwk9A1V2mPyk/AIIvUQ4WpDUGHXu0sO2Ruyd8djjwfCkw89+X1EAX74Zd3R8oMEmQAZIA2AE4iaRK6fr/xrvr0nCHCo0hIC9l+XBkR1XraVL8cL8M3psa84fgg4vXG71TJVgAOvdgDt40+PMgisMXEAbj3H8jx9/Nb3KudL3ccXhlkJ0Po/T5oOVLxzexrfdQDcvkuT82Vjs7kDHScgCgsXgFd7gHajygpTudauL06zBDgOMW0WGsB5XFWC68YnRbedLlsFIJVxtSEAk3fgaX7O7eRNB8CWZwds7cENBdhqm9siewbzhwypc74UQRXZg+uT+4011mC+epm6e6KxVRftkS0OKcjEVAB92cJ77ZuV14viRhe3CS8DEzAsBMt9zPBCRhcEGEA6LKZ2MOmUbiNBFc3ynLuyNI+y70f/aBqTWFseYjAkD79OiKztZQrpaxaDsEDD0acD/AGa0LwZxeNsWAAAAABJRU5ErkJggg==" /></i>
+            <h6>118, Veena Beena, Station Road, Bandra (West), Bombay - 400050, Maharashtra - India.
+            </h6>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.780931287132!2d72.82668971437312!3d19.05542458709082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9114d26890f%3A0x3944173f0f1baf3d!2sStanford%20Capital%20India%20Limited!5e0!3m2!1sen!2sin!4v1649575887558
+              " width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="row footer-second-last">
+        <div class="col-lg-4 col-sm-12 col-md-12 col-xl-4 col-12">
+          <div class="footer-phone"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZtJREFUSEvVlUFSwjAUht9LWTgDC8QLlJPYLrXjGYSToCehnsGpLltPAhcQWZQZF5iYF5qatimkdFjYGRak8H8v/3t/gnDhBy+sD1bA1fvYHwhcCoH+D+Ph9912fW4hDYAWB4EBiQqAdR9IBWCKkzABEMDvA6kAhslkiQAzEtxFmykBPc7SPpAKYJRMBFWdR5tyvQ4hcJd+1Hewomr3jE91Yys9QZHl91/h2YDR23Wqmst5mD9sMxLSa9q2LuJFD//+Ii1ayG9P9JE2PdObYTJRuzKhXSDVHryOA2AsNas1Gh/vos28i3hjB2ZDdcWqB5ytCIqcz7V1rqBG0EqbjIbqtXoeXBJvTzJnq0OKcb6LPmNLADPk/AU8XJxKvPUsGiY3MwSxNCsurHoshqB06FTiW0/To7ZwpkAuiW8F1G2Roxrr0bU1uC3xR++Dui0CICbvbZPUlninC8cIoCpejSxALEf5Yz84nLp0f1DD64l3ApCA3o0UmKlkWx7bceIM0HoHr70AQNwiCp9uvQJYHi8muzPANcH6d/8f8Au1oyso683k/gAAAABJRU5ErkJggg==" />+91
+            22 4177 4177</div>
+        </div>
+        <div class="col-lg-4 col-sm-12 col-md-12 col-xl-4 col-12">
+          <div class="footer-social">
+            <ul>
+              <li><a href="https://www.instagram.com/stanfordcapitalservices?igsh=emdyMGttcXA3YzRm" target="_blank"
+                  class="tw"><img src="img/background/bgicon.png" alt=""></a></li>
+              <li><a href="https://www.facebook.com/stanfordcapitalservices/" target="_blank" class="fb"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYtJREFUSEu1lUF2gkAMhhN6kOqmcoviRuopKjfAXqB6gcINoKewupHeAtx0TjLpGyqYgRkG3qvuhCFfkv+fBOHOP7xzfHAC/PgQSPCeETEAoAAABBEVACg8kN9lui6GkrQC/PgwI3zIrkGHYggkuSzTtTAdMgKe4uM7IuwmtE8QQX5Jw333mx5gQnCV8YwHJIJdF6IB/tri/QxkLhBxX36s8uZMJyHVrojrogEW29N5qOdIct7ttaFiUSXhvEmgBfhvpw0RZbbsiSi/pC9R815VK8F7Ze5qP72KXrurBbh6z/vrTuamBQN8ZYi4sVWAiFHTe1cyAFhUyWqpVbDYHpW4mis4bBoAWh3aCiwATTBTdTZjVElYx2YAo4NGAPqVc0O4RK7HgMqE21M5qKnGdG+MADXUCL3zf4jM9Rp90caLfHOQpoH6MzQqxgL4JesB1AObx8cAnMPOMsDqxy4Af6/dH5uo3YUzAOhN0FGA7lDj61HNIinp0QP5adtkvWk6YXtNOupc+pOiGQ7/Au1A/hnf0/n6AAAAAElFTkSuQmCC" /></a>
+              </li>
+              <li><a href="https://in.linkedin.com/company/stanfordcapitalindia" target="_blank" class="ld"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARlJREFUSEvtlM1xwjAQhd9zJeIClBEuELqADgwNJBVgOoAu+LngMjAXVAmbWRuBMRBjCzKTGXzTWHqf3tvVEi/++GJ9/C2gNVpvAPnwdGWTqNdwGhcOWqOVeIqnx5Ood9L9BcBY5GBJDqpCSwEiMt9NP4cqXCe2UgDAOIm6HQU0w+WsqosHALAiEgO0JL6fHhEAq+KZsBgARl3l1tD/WY0CU+y8Ugf5GriI3KF2uEjbeDvtH4Ea4+or79QLcCuudrgwwmDv/nkDXGeRHG4n3Xmx27wAGpEw2KTVudPOfoDxeiAisyIg385vgH9E+tCylwyQ1L43WtBsffGwrvZVmKZVB8R5/90i1xls19c4D8rUcf17Pnby/wN+ACWqIChsZKTGAAAAAElFTkSuQmCC" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 col-md-12 col-xl-4 col-12">
+          <div class="footer-email"><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATBJREFUSEvdlUtuwjAQhmcaL5DwllTdhZuQkwAnCT1JehO4Sb1Dha2RWBANjGVbrlVXTgKbeOnMzDf+5xGEFx98cXyYEOAs5YqIWkCsRslGpBBxu9D6wHG8RCcp9wCwGhXcOROp8nJZxgDii+52W35cr2oI6DibVYUQ3+xbam2SD19gAECkCPHrXevPPhAjMQCrYE4aYA0etF0u5EfK5pHpLkwoCeDA3phIdV1XpySzkrSudqFvEsAfjGNR7E1HRV3hsvwlSWBzktJI/S+ADSykAcRNXJdIkkOpde3A2QAHeRNi7SSzEnArm3b+q069AD6r+XwDiKy1PwhQu2EK7wcBvGRCtEBUhZMat/JgQO5MTBvwvGUH4FvX7yI7OM3ojZpa17lF7Gs3oV9m36fn2t8BVgfKGdJ19xAAAAAASUVORK5CYII=" />
+            <a href="mailto:info@stanfordcapital.in">info@stanfordcapital.in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="copyright">
+    <div class="container">
+      <div class="row last-section">
+        <div class="col-lg-6 col-sm-12 col-md-12 col-xl-6 col-12">
+          <div class="left-section">Copyright © 2024 Stanford Capital. All rights reserved.</div>
+        </div>
+        <!-- <div class="col-lg-6 col-sm-12 col-md-12 col-xl-6 col-12">
+        <div class="right-section">Design & Developed By<a href="https://www.dfoxmedia.com/" target="_blank"><img src="images/dfox.png" alt=""/></a></div>
+      </div> -->
+      </div>
+    </div>
+  </section>
+  <a href="#" class="back-to-top" style="display: block;"><img style="margin-top: 4px;"
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMBJREFUSEvt09ENwjAMBNC7TegmZROYBDEJbMIq3cTFlS1FURobpEhItF/9SO4ll4QY/HFwPv4MEJGTVkpyyVabrsjCHwAUOWeRFFCEz7Zy3UEKCYFGuLeTQrpAFa6B2xkA8P8Q2QXqcJKTiIgBE4CXgV2kCbTCNdgBkrQxIbIHXADojVl05V56CRiolTlyJfmsr2+vott7pfdyQg0UyNwK395M9sHUFWXnHUDY1G9VFC63MeCjHRzANw2Ec4afwQr+BWYZJ7QMDgAAAABJRU5ErkJggg==" /></a>
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/sina-nav.js"></script>
+  <script src="js/dockPanel-1.0.0.js"></script>
+
+  <script>
+
+    function hidePanel() {
+      $('#panelRight').dockPanel('hide', () => { console.log('panel collapsed') });
+    }
+
+    function showPanel() {
+      $('#panelRight').dockPanel('show', () => { console.log('panel shown') });
+    }
+
+    $(function () {
+      $('#panelRight').dockPanel({ dock: 'right' });
+    });
+  </script>
+
+  <script>
+    var form = document.getElementById("my-form");
+
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+  </script>
+
+  <script>
+    var form = document.getElementById("letsTalkForm");
+
+    async function letsTalkSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("letsTalkForm-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", letsTalkSubmit)
+  </script>
+  <!--Start of Tawk.to Script-->
+  <!-- <script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/610cf6ded6e7610a49aee2c8/1fcda8lv3';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script> -->
+  <!--End of Tawk.to Script-->
+</body>
+
+</html>

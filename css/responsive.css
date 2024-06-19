@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1440px) and (max-width: 1920px) { 
+
+
+}
+
+/*============	Media 768Px Start ============ */
+
+@media (min-width: 991px) and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 61.938em) {	
+.footer-section .footer-second-last .footer-email{ text-align:left;}
+.copyright .last-section .right-section{ text-align:left;}
+.socialtop {text-align: left; padding-top: 0;}
+header .top-bar .topbar-left ul li{ font-size: 14px;}
+.title-left-blk{ position:relative; margin-bottom:35px; width:100%;}
+.title-left-blk h2{ font-size:25px; line-height:40px; color:#000000; font-weight:600; text-align:center;}
+.title-left-blk h2:after{ content:" "; background:url(../img/background/bg-2.png) no-repeat center center; width:120px; height:5px; display:block; margin:0 auto;}
+.title-left-blk-1 h2{ font-size: 35px;}
+.title-center-blk h2{ font-size: 30px;}
+.title-center-wht h2{ font-size: 45px; color: #ffffff;}
+.home-abtmain{ background: none; padding: 0 10px;}
+.home-abtmain .home-abt-section{ padding: 40px 0;}
+.home-abt .container .about-below p{ margin-left: 20px; margin-right: 20px; font-size: 14px;}
+.home-abt{width:100%; float:left; position:relative; background:#FFFFFF; padding: 0;}
+.home-abt .home-abt-section{ padding:35px 0px; position:relative;}
+.home-abt .home-abt-section p{ margin-left: 20px; margin-right: 20px; font-size: 14px;}
+.home-abt .home-abt-section a{ margin-left: 20px;}
+.abt-four .line-round{ display:none;}
+.newsletter{ background-image:none; padding:45px 0px; text-align:center; position:relative; float:left; width:100%; margin-bottom:0px; display:block; background-color:#002046}
+.newsletter .newsletter-form{ width:100%; text-align:center; margin:0 auto;}
+.newsletter .newsletter-form .subscription-block-form-box{ display:block}
+.newsletter .newsletter-form .subscription-block-form-box .newsletter_name_email{ margin-bottom:5px;}
+.footer-section{ width:100%; float:left; position:relative; background:#3b3b3b; padding-top:30px;}
+.footer-section .footer-links{ margin-left: 15px;}
+.footer-section .footer-map-section h6{ margin-top: 10px;}
+.footer-section .footer-second-last .footer-phone{ text-align: center; font-size: 14px;}
+.footer-section .footer-second-last .footer-phone img{ margin-right: 5px; margin-bottom: 1px;}
+.footer-section .footer-second-last .footer-email{ text-align: center; font-size: 14px;}
+.footer-section .footer-second-last .footer-email img{ margin-right: 5px; margin-bottom: 1px;}
+.float{ height: 50px; margin-left: 4%;}
+.contact{ height: 50px; margin-left: 4%;}
+#panelRight{ width:100%; display:none; background:#092457; z-index:999;}
+.home-testimonials .testi-section{ background:url(../img/background/bg-2.png) no-repeat center center; padding:35px; width:100%;}
+.abt-bg .left-side{ float:left; width:100%;}
+.abt-bg .left-side .abt-content{ position:relative; float:left; width:100%; right:0px; padding:0px 15px;}
+.abt-bg .right-side{ float:left; width:100%;}
+.abt-bg .right-side .abt-img{ position:relative; float:left; left:0px; margin-top:0px; padding:0px 15px;}
+.product-last ul li{list-style-type:none; color:#484848;font-size:16px;line-height: 26px;position: relative;padding-left: 25px;display: inline-block;margin-bottom: 10px; width:100%; margin-right:0px; vertical-align:top;}
+.company-stratergy h5{ margin-bottom: 20px;}
+.col-12{ margin-top: 8px; margin-bottom: 8px;}
+.back-to-top{ right: 25px; bottom: 15px;}
+.copyright .last-section .left-section{ font-size: 12px; text-align: center;}
+.footer-section .container .div-footer-logo .footer-logo{ width: 250px;}
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+    
+}
+
+@media(min-width:768px) and (max-width:991px) {
+
+
+
+}
+
+@media(min-width:320px) and (max-width:767px) {
+
+}
+
+@media(min-width:768px) {
+
+}
+
+@media (max-width: 980px) {
+
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 578px) and (max-width: 768px) {
+
+
+}
+
+@media(max-width:767px){
+
+}
+
+/*============ Media 300Px Star ============ */
+
+@media (max-width: 576px) {
+
+}
+
+/*============ Media 320Px Start ============ */
+
+@media (max-width: 320px) {
+
+}
+
